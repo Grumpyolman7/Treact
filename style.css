@@ -31,8 +31,7 @@
     margin:0 auto;
     padding:96px 0;
     overflow:hidden;
-
-}
+    }
 .img{
     width:100%;
 }
@@ -49,6 +48,7 @@
     align-items: center;
     width:100%;
     max-width:1200px;
+    margin:0 auto;
    
  }
 
@@ -204,14 +204,20 @@ button {
 /*
 features
 */
-
-
 .features{
- 
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
+
+.row__narrow{
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;}
 .row__narrow{
     display: flex;
-    flex-direction:column;   
+    flex-direction: column;
     align-items: center;
 }
 .section__tag{
@@ -236,17 +242,18 @@ features
 
 /*services*/
 
+
+
 .feature__row{
     padding:32px 8px;
     margin: 0 16px;
     display: flex;
-    align-items: flex-start;
-   
-    
+    justify-content: space-between;
+    align-items: center;
+ 
 }
 
 .feature__img--wrapper{
-    display: flex;
     padding:20px;
     border: 1px solid #e5e7eb;
     border-radius:500px;
