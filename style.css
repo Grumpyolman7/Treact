@@ -215,6 +215,7 @@ features
     width:100%;
     max-width: 1200px;
     margin:0 auto;}
+
 .row__narrow{
     display: flex;
     flex-direction: column;
@@ -241,6 +242,11 @@ features
 }
 
 /*services*/
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
@@ -269,6 +275,7 @@ features
 .feature__title{
     line-height:1;
 }
+
 .feature__para{
     margin-top: 16px;
     font-size:16px;
