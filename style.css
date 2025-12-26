@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    border:border-box;
+    box-sizing: border-box;
     background-color: #f5f5f5;
     color: #243E63;
 }
@@ -24,6 +24,10 @@
 .body{
     max-width:100VW;
     overflow-x:hidden;
+}
+.nav{
+    padding-top: 32px;
+    display: flex;
 }
 .container{
     width:100%;
@@ -49,13 +53,13 @@
     width:100%;
     max-width:1200px;
     margin:0 auto;
+    padding:20px;
    
  }
 
 .nav__logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items:center;
 }
 
 .nav__title{
@@ -67,22 +71,20 @@
 .nav__logo--img{
     height:40px;
     width: 40px;
-    padding: 24px 16px;
+   
 }
 
 
 .nav__links{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 16px;
+  
 }
 
 .nav__link{
     text-decoration: none; 
     display:inline-block;
     margin-left: 40px;
-     color:#243E63;
+    color:#243E63;
 }
 
 .nav__link:hover{
@@ -107,35 +109,34 @@
     display: flex;
     justify-content: center;
 }
-@media(max-width:1200px){
-    .header__img{
-        max-width:512px
-    }
-}
+
+
 .header__description{
     display: flex;
     flex-direction: column;
     width:100%;
-    max-width:400px;
+    max-width:360px;
+    padding:8px
     
 }
 
 h1{
     font-size: 30px;
     text-align:center;
-    margin:16px;
+    margin: 8px;
 }
 .header__description--para{
     text-align:center;
-    margin:20px;
+    margin:16px;
 }
 
 .input__container {
     width: 100%;
-    max-width: 180px;
+    max-width: 360px;
+    max-height: 64px;
     border-radius: 500px;
     border: 2px solid rgb(229, 231, 235);
-    padding: 20px 192px 2px 20px;
+    padding: 20px 192px 20px 20px;
     color: rgb(36, 62, 99);
     font-size: 16px;
     font-weight: 500;
@@ -143,15 +144,15 @@ h1{
     position:relative;
     overflow:hidden;
     align-items: center;
-    margin:8px;
-    
+    margin:16px;
 }
 
 
 .email__input{
     border:none;
-    padding-top: 8px;
-    margin-bottom: 24px;
+    margin-bottom:24px;
+    
+    
 }
 .email__btn:hover {
  background-color: rgba(60, 13, 153);
@@ -160,22 +161,19 @@ h1{
 
 .email__btn{
     z-index: 2;
-    margin: 8px;
+    margin: -56px;
     height: calc(100% - 16px);
     border-radius: 500px;
-    width: 130px;
+    width: 104px;
     border: none;
     background-color: #6415ff;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
     position:absolute;
-    margin-top: -12px;
-    margin-left: 90px;
+    margin-left: 210px;
     transition: all 300ms ease;
 }
-
-
 
 button {
     cursor: pointer;
@@ -186,7 +184,7 @@ button {
 .header__customer--title{
     text-align: center;
     font-size: 12px;
-    margin: 8px;
+    margin:16px
 }
 .customer__logo{
     margin: 16px;
@@ -198,14 +196,16 @@ button {
     max-width:560px;
     display: flex;
     align-items: center;
-    padding: 16px;
+    padding: 8px;
 }
 
 /*
 features
 */
+
 .features{
-    max-width: 768px;
+    width:100%;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -214,7 +214,8 @@ features
 .row__narrow{
     width:100%;
     max-width: 1200px;
-    margin:0 auto;}
+    margin:0 auto;
+}
 
 .row__narrow{
     display: flex;
@@ -243,23 +244,17 @@ features
 
 /*services*/
 
-.features{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
 .feature__row{
     padding:32px 8px;
-    margin: 0 16px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
+    
+    width:calc(100% / 3)
  
 }
 
 .feature__img--wrapper{
+    display: flex;
     padding:20px;
     border: 1px solid #e5e7eb;
     border-radius:500px;
@@ -267,6 +262,7 @@ features
 .feature__img{
     width:24px;
     height:24px;
+    margin-bottom: 96px;
 }
 .feature__text{
     margin-top: 8px;
@@ -277,13 +273,95 @@ features
 }
 
 .feature__para{
+    max-width:none;
     margin-top: 16px;
-    font-size:16px;
-    color:rgb(124, 139, 161);
-    line-height:2;
-    font-weight:500;
+    font-size: 16px;
+    color: rgb(124, 139, 161);
+    line-height: 2;
+    font-weight: 500;
 }
 
+/*
+section Quality
+*/
+
+
+#quality .row{
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+}
+.row{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    color: #243e63;
+    flex-direction: column;
+    align-items: center;
+}
+.quality__description{
+    margin-right: 0px;
+    padding-right: 48px;
+    max-width: 576px;
+    
+}
+.quality__img--wrapper{
+    border-radius: 4px;
+    border:1px solid rgb (229, 231, 235);
+    position: relative;
+    margin: 0 56px;
+    z-index: 2;
+    display: flex;
+    width:50%;
+    max-width:576px;
+
+}
+.section__tag{
+    font-weight:700;
+    text-transform:uppercase;
+    font-size: 16px;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+}
+#quality
+.section__title, #values  .section__title{
+    line-height: 1.25;
+    font-size: 36px;
+    font-weight:900;
+    color: rgb(36, 62, 99);
+    margin:16px 0;
+    letter-spacing: .025em;
+}
+
+.section__para{
+    font-size:16px;
+    font-weight:500;
+    color: #7c8ba1;
+    line-height:1.625;
+    margin:0;
+}
+
+#quality  .email__btn{
+     margin-top: 16px;
+}
+
+.btn{
+    line-height: 1.5;
+    background-color: #6415ff;
+    cursor:pointer;
+    border:none;
+    padding:12px 32px;
+    border-radius: 500px;
+    font-size: 14px;
+    color:#fff;
+    font-weight: bold;
+    transition: all 300ms ease;
+
+}
+.quality__img{
+    z-index:1;
+    width:100%;
+}
 
 
 

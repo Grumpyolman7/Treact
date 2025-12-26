@@ -11,7 +11,7 @@
 </head>
 <body>
     <section id="landing">
-        <nav>
+        <nav class="nav">
             <div class="row">
                 <div class="nav__row">
                     <div class="nav__logo">
@@ -26,10 +26,26 @@
                           <a href="#" class="nav__link">Login</a>
                           <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                         </div>
+                        <button class="btn__menu" onclick="openMenu">
+     
+                        </button>
+            
                 </div>
-            </div>
-        </nav>
-    </section>
+            </div>    
+        </nav>  
+        <div class="menu">
+           <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+           </button>
+                <div class="menu__links">
+                          <a href="About" class="menu__link" onclick="closeMenu()">About</a>
+                          <a href="Blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                          <a href="Pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                          <a href="Contact Us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                          <a href="logim" class="menu__link" onclick="closeMenu()">Login</a>
+                          <a href="Sign Up" class="menu__link nav__link--primary" onclick="closeMenu()">Sign Up</a>
+                </div> 
+        </div>
+    </section>                                                                           
     <header>
         <div class="container">
             <div class="row">
@@ -121,6 +137,23 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="quality">
+            <div class="conatainer">
+                <div class="row">
+                   <div class="quality__description">
+                        <div class="section__tag"><span class="purple">QUALITY WORK</span></div>
+                             <h2 class="section__title">Designed & Developed by<span class="purple"> Professionals</span></h2>
+                             <p class="section__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis facere deserunt atque modi in quibusdam aliquid laboriosam ipsum voluptatibus fugit!</p>
+                             <button class="btn">Learn More</button>
+                    </div>
+                    <figure class="quality__img--wrapper">
+                        <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" class="quality__img">
+                    
+                    </figure>
+                
                 </div>
             </div>
         </section>
