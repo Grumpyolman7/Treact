@@ -17,7 +17,7 @@
 .purple{
     color:#6415ff;
 }
-
+body{background:green;}
 .btn__menu{
     display:none;
     background:transparent;
@@ -83,7 +83,6 @@
 
 .body{
     max-width:100VW;
-    overflow-x:hidden;
 }
 .nav{
     padding-top: 32px;
@@ -130,7 +129,7 @@
 
 .nav__logo--img{
     height:40px;
-    width: 40px;
+    width:40px;
    
 }
 
@@ -424,9 +423,6 @@ section Quality
 }
 
 @media (max-width:550px){
-    nav__links:{
-        display:none;
-    }
 }
 
 
