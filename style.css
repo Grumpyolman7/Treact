@@ -202,7 +202,7 @@ button {
 
 
 
-
+/*
 
 @media(max-width:1200px){
     .nav__links{
@@ -211,7 +211,7 @@ button {
 }
 
 
-@media(max-width:1200) {
+@media(max-width:1200px) {
     .btn__menu{
         display:block;
     }
