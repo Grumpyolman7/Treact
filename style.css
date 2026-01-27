@@ -25,9 +25,10 @@ nav {
     padding-top: 32px;
     display: flex;
 }
-li{
+
+li {
     list-style-type: none;
-    display:list-item;
+    display: list-item;
 }
 
 .nav__row {
@@ -71,10 +72,9 @@ li{
     font-size: 14px;
     font-weight: 600;
     padding-top: 4px;
-    letter-spacing: 0.35;
     border-bottom: 2px solid transparent;
     position: relative;
-    transition: all 300ms ease;
+
 }
 
 .nav__link {
@@ -85,10 +85,13 @@ li{
 a {
     display: inline;
     text-decoration: none;
-
-
 }
-
+.nav__link:hover{
+    text-decoration: underline;
+}
+.menu__link:hover{
+    text-decoration: underline;
+}
 .login {
     margin-left: 48px;
 }
@@ -97,6 +100,7 @@ a {
     margin: 0;
     padding: 10px 32px;
     margin-top: 2px;
+    border-radius: 9999px;
     color: #fff;
     background-color: #6415ff;
     line-height: 1.5;
@@ -104,18 +108,15 @@ a {
     width: auto;
     transition: all 300ms ease;
 }
-
-.nav__link {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.35;
-    position: relative;
+.nav__link--primary:hover {
+    background-color: rgba(80, 17, 204);
+    color: white;
+    text-decoration: none;
 }
 
 .btn__menu {
     background-color: transparent;
     border: none;
-    display: none;
     transition: all 300ms ease;
 
 }
@@ -123,24 +124,23 @@ a {
 button {
     cursor: pointer;
 }
+
 .menu--open .menu {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
 }
-.btn__menu--close{
-    position:fixed;
+
+.btn__menu--close {
+    position: fixed;
     top: 24px;
     right: 18px;
 }
-.btn__menu {
-    background-color: transparent;
-    border: none;
-    transition: all 300ms ease;
+
+.btn__menu:hover {
+    text-decoration: underline;
 }
-.btn__menu--svg:hover {
-    filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
-}
+
 .menu__links {
     width: 100%;
     height: 100%;
@@ -158,6 +158,7 @@ button {
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
 }
+
 .menu__link--primary {
     color: #f7fafc;
     padding: 12px 32px;
@@ -165,6 +166,10 @@ button {
     border-radius: 500px;
     border: none;
 }
+.menu__link--primary:hover{
+    text-decoration: none;
+}
+
 .menu__link {
     font-size: 18px;
     font-weight: 600;
@@ -172,6 +177,7 @@ button {
     margin: 8px 0;
 
 }
+
 .menu--open .menu {
     visibility: visible;
     opacity: 1;
@@ -202,13 +208,9 @@ button {
 
 
 
-/*
 
-@media(max-width:1200px){
-    .nav__links{
-        display:none;
-    }
-}
+
+
 
 
 @media(max-width:1200px) {
