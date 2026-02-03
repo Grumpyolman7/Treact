@@ -445,21 +445,13 @@ img {
     padding: 96px 0;
 }
 
-#quality.row {
+#quality .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .quality__description,
 .quality__img--wrapper {
@@ -1641,7 +1633,6 @@ a {
 .footer__column{
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 
