@@ -230,21 +230,21 @@ button {
 
 /*header*/
 
+
 .container {
     padding: 96px 0;
 }
 
-
-#header .row {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
  
+}
+#header .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .header__description {
@@ -259,7 +259,7 @@ h1 {
 }
 
 .header__description--para {
-    font-size: 16px;
+    font-size: 18px;
     margin: 32px 0;
     line-height: 1.5;
 }
@@ -366,7 +366,7 @@ img {
 }
 
 
-.row{
+#features .row{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1409,10 +1409,7 @@ button {
     line-height: 1.5;
 }
 @media(max-width:768px){
-    .testimonial__buttons{
-        flex-direction: column;
 
-    }
 }
 .testimonial__buttons {
     display: flex;
@@ -1746,10 +1743,11 @@ a {
     .h1{
             font-size:30px;
         }
-    header .row{
+    #header .row{
         flex-direction: column;
         align-items: center;
-        display: flex;
+        align-items: flex-end;
+    
     } 
     .sect__title{
         font-size:36px;
