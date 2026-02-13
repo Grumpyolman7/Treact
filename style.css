@@ -241,11 +241,12 @@ button {
     margin: 0 auto;
  
 }
-#header .row{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+
+header .row{
+     display: flex;
+     justify-content: space-between; 
+     align-items: flex-end; 
+     }
 
 .header__description {
     width: 40%;
@@ -259,7 +260,7 @@ h1 {
 }
 
 .header__description--para {
-    font-size: 18px;
+    font-size: 16px;
     margin: 32px 0;
     line-height: 1.5;
 }
@@ -468,23 +469,7 @@ img {
 .container {
     padding: 96px 0;
 }
- .header__email{
-        flex-direction: column;
-        height: auto;
-    }
-.email__input{
-        position: static;
-        padding: 16px 0;
-        padding-left: 32px;
-        line-height: 1.5;
-    }
- .email__btn{
-        width: 100%;
-        padding: 16px 0;
-        margin: 16px 0;
-        margin-bottom: 0px;
-        line-height: 1.5;
-    }
+
 
 #quality .row{
     display: flex;
@@ -1694,14 +1679,14 @@ a {
 
 
 
-@media(max-width:1200){
-    #header .row{
-  align-items: flex-end;
-    }
+@media(max-width:1026px){
+.testimonial__bottom{
+    flex-direction: column;
+}
   
 }
-
-@media(max-width:1024px) {
+/*small phones, tablets,large smartphones*/
+@media(max-width:768px) {
     .nav__links {
         display: none;
     }
@@ -1720,17 +1705,26 @@ a {
         max-width: 512px;
         margin: 0 auto;
     }
+    header .row{
+    display:flex;
+    flex-direction: column;
+  }
     .header__img--wrapper{
         margin-top: 48px;
         width:100%;
         max-width:512px;
         margin: 0 auto;
+
     }
+  
    
 
     .h1{
             font-size:30px;
         }
+     .header__description--para{
+    margin: 20px 0;
+}   
     .values__row{
        flex-wrap: wrap-reverse;
        display: flex;
@@ -1761,9 +1755,7 @@ a {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-.header__description--para{
-    margin: 20px 0;
-}
+
 
 .start__row{
     flex-direction: column;
@@ -1777,14 +1769,7 @@ a {
     width: auto;
     margin-top: 24px;
 }
-
-   
-}
-
-
-
-/*small phones, tablets,large smartphones*/
-@media(max-width:768px){
+ 
 
  .features{
     justify-content: center;
@@ -1879,15 +1864,14 @@ a {
         margin-bottom: 0px;
         line-height: 1.5;
     }
-    .testimonial-bottom{
-        display: flex;
-        justify-content: space-between;
+  
+
     }
     
   
    
 
-}
+
    
 
 
@@ -1895,7 +1879,9 @@ a {
 /*small phones, large smartphons*/
 
 @media (max-width:550px) {
-
+    .start__buttons{
+        flex-direction: column;
+    }
 }
 
 
