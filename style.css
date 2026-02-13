@@ -741,7 +741,7 @@ img {
 }
 
 
-#values .row {
+.values__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1361,11 +1361,6 @@ button {
     }
 
 
-.testimonial__bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
 .testimonial__profile {
     display: flex;
     align-items: center;
@@ -1392,6 +1387,11 @@ button {
     color: #7c8ba1;
     font-weight: 500;
     line-height: 1.5;
+}
+.testimonial__bottom{
+   display: flex;
+   align-items: center;
+
 }
 
 .testimonial__buttons {
@@ -1731,10 +1731,12 @@ a {
     .h1{
             font-size:30px;
         }
-    .row{
-        flex-direction: column;
-        align-items: center;
-        align-items: flex-end;
+    .values__row{
+       flex-wrap: wrap-reverse;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    
     
     } 
     .sect__title{
@@ -1762,9 +1764,18 @@ a {
 .header__description--para{
     margin: 20px 0;
 }
-#testimonials .container{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+
+.start__row{
+    flex-direction: column;
+}
+.start__title{
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+}
+.start__buttons{
+    width: auto;
+    margin-top: 24px;
 }
 
    
@@ -1802,9 +1813,7 @@ a {
         width: 100%;
         max-width: 448px;
     }
-     #values .row{
-        flex-direction: column-reverse;
-    }
+ 
         .section__para{
         font-size: 14px;
     }
@@ -1839,6 +1848,9 @@ a {
     margin-top: 64px;
     text-align: center;
 }
+.testimonial-bottom{
+    flex-wrap: wrap;
+}
 }
 
 
@@ -1866,6 +1878,10 @@ a {
         margin: 16px 0;
         margin-bottom: 0px;
         line-height: 1.5;
+    }
+    .testimonial-bottom{
+        display: flex;
+        justify-content: space-between;
     }
     
   
